@@ -12,6 +12,18 @@
     gap: 1.5rem 0;
     grid-template-columns: minmax(min-content, max-content);
     justify-content: center;
+
+
+    @media screen and (max-width:$bp-medium) {
+        grid-column: full-start/full-end;
+      
+     }
+
+     @media screen and (max-width:$bp-small) {
+        padding: 5rem;
+      
+      
+     }
    
 
     &__logo{

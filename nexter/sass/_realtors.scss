@@ -8,7 +8,11 @@
     align-items: center;
     justify-content: center;
     gap: 3rem;
-   
+   @media screen and (max-width:$bp-medium) {
+        grid-column: full-start/full-end;
+      
+     }
+
     
 
 
@@ -17,7 +21,14 @@
         grid-template-columns:min-content max-content ;
         gap: 5vh 2rem;
          align-items: center;
-        
+         @media screen and (max-width:$bp-medium) {
+            grid-template-columns:repeat(3,min-content max-content) ;   
+          
+        }
+
+         @media screen and (max-width:$bp-small) {
+            grid-template-columns:min-content max-content ;
+        }
     }
     &__img{
         width: 7rem;
